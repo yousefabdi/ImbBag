@@ -74,7 +74,7 @@ y_pred = clf.predict(X_test)
 
 ## 📅 Version History
 
-- **v1.0.0** - Initial release - July 29, 2024
+- **v1.1.0** - Initial release - October 17, 2024
 
 ## 🧑‍💻 Credits
 
