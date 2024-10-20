@@ -1,4 +1,4 @@
-# UnderBag
+# **<span style="color:blue">UnderBag</span>**
 
 ## Description
 The Under Bagging algorithm combines the principles of bagging with a focus on under-sampling the majority class to balance the dataset.
@@ -45,7 +45,7 @@ class UnderBag:
             y_train (1D numpy array): The class labels for training samples.
         """
 
-    def predict(self, X):
+    def predict_proba(self, X):
         """
         Make predictions based on the fitted model.
         
@@ -56,3 +56,13 @@ class UnderBag:
             numpy array: Predictions.
         """
 
+    def predict(self, X):
+        """
+        Make predictions based on the fitted model.
+        
+        Args:
+            X (2D array): The data to make predictions on.
+        
+        Returns:
+            numpy array: Predictions.
+        """
