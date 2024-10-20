@@ -5,9 +5,8 @@ The Under Bagging algorithm combines the principles of bagging with a focus on u
 
 ## Class Definition
 ```python
-<pre style="color:blue">
+
 class UnderBag:
-</pre>
     """
     Under Bagging algorithm
     
