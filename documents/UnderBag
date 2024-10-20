@@ -1,4 +1,4 @@
-# **<span style="color:blue">UnderBag</span>**
+# UnderBag
 
 ## Description
 The Under Bagging algorithm combines the principles of bagging with a focus on under-sampling the majority class to balance the dataset.
