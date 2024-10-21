@@ -1,0 +1,638 @@
+<html xmlns="http://www.w3.org/TR/REC-html40">
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=windows-1252">
+<style>
+<!--
+ /* Font Definitions */
+ @font-face
+	{font-family:"Cambria Math";
+	panose-1:2 4 5 3 5 4 6 3 2 4;
+	mso-font-charset:0;
+	mso-generic-font-family:roman;
+	mso-font-pitch:variable;
+	mso-font-signature:-536869121 1107305727 33554432 0 415 0;}
+@font-face
+	{font-family:Calibri;
+	panose-1:2 15 5 2 2 2 4 3 2 4;
+	mso-font-charset:0;
+	mso-generic-font-family:swiss;
+	mso-font-pitch:variable;
+	mso-font-signature:-469750017 -1040178053 9 0 511 0;}
+ /* Style Definitions */
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{mso-style-unhide:no;
+	mso-style-qformat:yes;
+	mso-style-parent:"";
+	margin-top:0in;
+	margin-right:0in;
+	margin-bottom:8.0pt;
+	margin-left:0in;
+	line-height:107%;
+	mso-pagination:widow-orphan;
+	font-size:11.0pt;
+	font-family:"Calibri",sans-serif;
+	mso-ascii-font-family:Calibri;
+	mso-ascii-theme-font:minor-latin;
+	mso-fareast-font-family:Calibri;
+	mso-fareast-theme-font:minor-latin;
+	mso-hansi-font-family:Calibri;
+	mso-hansi-theme-font:minor-latin;
+	mso-bidi-font-family:Arial;
+	mso-bidi-theme-font:minor-bidi;
+	mso-font-kerning:1.0pt;
+	mso-ligatures:standardcontextual;}
+a:link, span.MsoHyperlink
+	{mso-style-priority:99;
+	color:#0563C1;
+	mso-themecolor:hyperlink;
+	text-decoration:underline;
+	text-underline:single;}
+a:visited, span.MsoHyperlinkFollowed
+	{mso-style-noshow:yes;
+	mso-style-priority:99;
+	color:#954F72;
+	mso-themecolor:followedhyperlink;
+	text-decoration:underline;
+	text-underline:single;}
+span.SpellE
+	{mso-style-name:"";
+	mso-spl-e:yes;}
+span.GramE
+	{mso-style-name:"";
+	mso-gram-e:yes;}
+.MsoChpDefault
+	{mso-style-type:export-only;
+	mso-default-props:yes;
+	mso-ascii-font-family:Calibri;
+	mso-ascii-theme-font:minor-latin;
+	mso-fareast-font-family:Calibri;
+	mso-fareast-theme-font:minor-latin;
+	mso-hansi-font-family:Calibri;
+	mso-hansi-theme-font:minor-latin;
+	mso-bidi-font-family:Arial;
+	mso-bidi-theme-font:minor-bidi;}
+.MsoPapDefault
+	{mso-style-type:export-only;
+	margin-bottom:8.0pt;
+	line-height:107%;}
+@page WordSection1
+	{size:8.5in 11.0in;
+	margin:1.0in 1.0in 1.0in 1.0in;
+	mso-header-margin:.5in;
+	mso-footer-margin:.5in;
+	mso-paper-source:0;}
+div.WordSection1
+	{page:WordSection1;}
+ /* List Definitions */
+ @list l0
+	{mso-list-id:1275942897;
+	mso-list-template-ids:-543811644;}
+@list l0:level1
+	{mso-level-tab-stop:.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l0:level2
+	{mso-level-tab-stop:1.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l0:level3
+	{mso-level-tab-stop:1.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l0:level4
+	{mso-level-tab-stop:2.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l0:level5
+	{mso-level-tab-stop:2.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l0:level6
+	{mso-level-tab-stop:3.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l0:level7
+	{mso-level-tab-stop:3.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l0:level8
+	{mso-level-tab-stop:4.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l0:level9
+	{mso-level-tab-stop:4.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+ol
+	{margin-bottom:0in;}
+ul
+	{margin-bottom:0in;}
+-->
+</style>
+<!--[if gte mso 10]>
+<style>
+ /* Style Definitions */
+ table.MsoNormalTable
+	{mso-style-name:"Table Normal";
+	mso-tstyle-rowband-size:0;
+	mso-tstyle-colband-size:0;
+	mso-style-noshow:yes;
+	mso-style-priority:99;
+	mso-style-parent:"";
+	mso-padding-alt:0in 5.4pt 0in 5.4pt;
+	mso-para-margin-top:0in;
+	mso-para-margin-right:0in;
+	mso-para-margin-bottom:8.0pt;
+	mso-para-margin-left:0in;
+	line-height:107%;
+	mso-pagination:widow-orphan;
+	font-size:11.0pt;
+	font-family:"Calibri",sans-serif;
+	mso-ascii-font-family:Calibri;
+	mso-ascii-theme-font:minor-latin;
+	mso-hansi-font-family:Calibri;
+	mso-hansi-theme-font:minor-latin;
+	mso-bidi-font-family:Arial;
+	mso-bidi-theme-font:minor-bidi;
+	mso-font-kerning:1.0pt;
+	mso-ligatures:standardcontextual;}
+table.MsoTableGrid
+	{mso-style-name:"Table Grid";
+	mso-tstyle-rowband-size:0;
+	mso-tstyle-colband-size:0;
+	mso-style-priority:39;
+	mso-style-unhide:no;
+	border:solid windowtext 1.0pt;
+	mso-border-alt:solid windowtext .5pt;
+	mso-padding-alt:0in 5.4pt 0in 5.4pt;
+	mso-border-insideh:.5pt solid windowtext;
+	mso-border-insidev:.5pt solid windowtext;
+	mso-para-margin:0in;
+	mso-pagination:widow-orphan;
+	font-size:11.0pt;
+	font-family:"Calibri",sans-serif;
+	mso-ascii-font-family:Calibri;
+	mso-ascii-theme-font:minor-latin;
+	mso-hansi-font-family:Calibri;
+	mso-hansi-theme-font:minor-latin;
+	mso-bidi-font-family:Arial;
+	mso-bidi-theme-font:minor-bidi;
+	mso-font-kerning:1.0pt;
+	mso-ligatures:standardcontextual;}
+</style>
+<![endif]--><!--[if gte mso 9]><xml>
+ <o:shapedefaults v:ext="edit" spidmax="1026"/>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <o:shapelayout v:ext="edit">
+  <o:idmap v:ext="edit" data="1"/>
+ </o:shapelayout></xml><![endif]-->
+</head>
+
+<body lang=EN-US link="#0563C1" vlink="#954F72" style='tab-interval:.5in;
+word-wrap:break-word'>
+
+<div class=WordSection1>
+
+<table class=MsoTableGrid border=1 cellspacing=0 cellpadding=0
+ style='border-collapse:collapse;border:none;mso-border-alt:solid windowtext .5pt;
+ mso-yfti-tbllook:1184;mso-padding-alt:0in 5.4pt 0in 5.4pt'>
+ <tr style='mso-yfti-irow:0;mso-yfti-firstrow:yes;mso-yfti-lastrow:yes'>
+  <td width=678 style='width:508.2pt;border:solid windowtext 1.0pt;mso-border-alt:
+  solid windowtext .5pt;background:#FFE599;mso-background-themecolor:accent4;
+  mso-background-themetint:102;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:6.0pt;line-height:107%'><b><i><span
+  style='font-size:12.0pt;line-height:107%;font-family:"Times New Roman",serif;
+  mso-ascii-theme-font:major-bidi;mso-hansi-theme-font:major-bidi;mso-bidi-theme-font:
+  major-bidi;color:black;mso-color-alt:windowtext'>class&nbsp;</span></i></b><span
+  class=GramE><b><span style='font-size:12.0pt;line-height:107%;font-family:
+  "Times New Roman",serif;mso-ascii-theme-font:major-bidi;mso-hansi-theme-font:
+  major-bidi;mso-bidi-theme-font:major-bidi;color:red'>imbbag.UnderBag</span></b></span><b><span
+  style='font-size:12.0pt;line-height:107%;font-family:"Times New Roman",serif;
+  mso-ascii-theme-font:major-bidi;mso-hansi-theme-font:major-bidi;mso-bidi-theme-font:
+  major-bidi;color:black;mso-color-alt:windowtext'>(<i>n_estimator=10</i>,&nbsp;estimator=<i>DecisionTreeClassifier())</i></span></b><b><span
+  style='font-size:12.0pt;line-height:107%;font-family:"Times New Roman",serif;
+  mso-ascii-theme-font:major-bidi;mso-hansi-theme-font:major-bidi;mso-bidi-theme-font:
+  major-bidi'><o:p></o:p></span></b></p>
+  </td>
+ </tr>
+</table>
+
+<p class=MsoNormal style='margin-bottom:6.0pt'><b><span style='font-size:12.0pt;
+line-height:107%;font-family:"Times New Roman",serif;mso-ascii-theme-font:major-bidi;
+mso-hansi-theme-font:major-bidi;mso-bidi-theme-font:major-bidi'><o:p>&nbsp;</o:p></span></b></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:6.0pt;
+margin-left:.5in'><span style='font-size:12.0pt;line-height:107%;font-family:
+"Times New Roman",serif;mso-ascii-theme-font:major-bidi;mso-hansi-theme-font:
+major-bidi;mso-bidi-theme-font:major-bidi'>Under Bagging classifier.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:585.9pt;margin-bottom:
+0in;margin-left:.5in'><span style='font-size:12.0pt;line-height:107%;
+font-family:"Times New Roman",serif;mso-ascii-theme-font:major-bidi;mso-hansi-theme-font:
+major-bidi;mso-bidi-theme-font:major-bidi'>The Under Bagging algorithm combines
+the principles of bagging with a focus on under-<span class=GramE>sampling <span
+style='mso-spacerun:yes'> </span>the</span> majority class to balance the
+dataset.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:0in'><b><span style='font-size:12.0pt;
+line-height:107%;font-family:"Times New Roman",serif;mso-ascii-theme-font:major-bidi;
+mso-hansi-theme-font:major-bidi;mso-bidi-theme-font:major-bidi'><o:p>&nbsp;</o:p></span></b></p>
+
+<p class=MsoNormal style='margin-left:.5in'><b><span style='font-size:12.0pt;
+line-height:107%;font-family:"Times New Roman",serif;mso-ascii-theme-font:major-bidi;
+mso-hansi-theme-font:major-bidi;mso-bidi-theme-font:major-bidi'>Parameters:<span
+style='mso-tab-count:1'>   </span><span class=SpellE>n_estimator</span>: <i>int
+(default=10)<o:p></o:p></i></span></b></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:576.9pt;margin-bottom:
+8.0pt;margin-left:1.5in;text-indent:.5in'><span style='font-size:12.0pt;
+line-height:107%;font-family:"Times New Roman",serif;mso-ascii-theme-font:major-bidi;
+mso-hansi-theme-font:major-bidi;mso-bidi-theme-font:major-bidi'>The number of
+nearest neighbors to search for.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:1.0in;text-indent:.5in'><b><span
+style='font-size:12.0pt;line-height:107%;font-family:"Times New Roman",serif;
+mso-ascii-theme-font:major-bidi;mso-hansi-theme-font:major-bidi;mso-bidi-theme-font:
+major-bidi'>estimator: <i>object (default= <span class=SpellE><span
+class=GramE>DecisionTreeClassifier</span></span><span class=GramE>(</span>))<o:p></o:p></i></span></b></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:0in;
+margin-left:1.0in;text-indent:.5in'><b><span style='font-size:12.0pt;
+line-height:107%;font-family:"Times New Roman",serif;mso-ascii-theme-font:major-bidi;
+mso-hansi-theme-font:major-bidi;mso-bidi-theme-font:major-bidi'><span
+style='mso-tab-count:1'>            </span></span></b><span style='font-size:
+12.0pt;line-height:107%;font-family:"Times New Roman",serif;mso-ascii-theme-font:
+major-bidi;mso-hansi-theme-font:major-bidi;mso-bidi-theme-font:major-bidi'>An
+instance of a base classifier used in the ensemble.<o:p></o:p></span></p>
+
+<div style='mso-element:para-border-div;border:none;border-bottom:solid windowtext 1.0pt;
+mso-border-bottom-alt:solid windowtext .75pt;padding:0in 0in 1.0pt 0in'>
+
+<p class=MsoNormal style='border:none;mso-border-bottom-alt:solid windowtext .75pt;
+padding:0in;mso-padding-alt:0in 0in 1.0pt 0in'><span style='font-size:12.0pt;
+line-height:107%;font-family:"Times New Roman",serif;mso-ascii-theme-font:major-bidi;
+mso-hansi-theme-font:major-bidi;mso-bidi-theme-font:major-bidi'><o:p>&nbsp;</o:p></span></p>
+
+</div>
+
+<p class=MsoNormal style='margin-bottom:6.0pt'><b><span style='font-size:12.0pt;
+line-height:107%;font-family:"Times New Roman",serif;mso-ascii-theme-font:major-bidi;
+mso-hansi-theme-font:major-bidi;mso-bidi-theme-font:major-bidi'>Examples:<o:p></o:p></span></b></p>
+
+<table class=MsoTableGrid border=1 cellspacing=0 cellpadding=0
+ style='background:#E7E6E6;mso-background-themecolor:background2;border-collapse:
+ collapse;border:none;mso-border-alt:solid windowtext .5pt;mso-yfti-tbllook:
+ 1184;mso-padding-alt:0in 5.4pt 0in 5.4pt'>
+ <tr style='mso-yfti-irow:0;mso-yfti-firstrow:yes;mso-yfti-lastrow:yes'>
+  <td width=678 valign=top style='width:508.2pt;border:solid windowtext 1.0pt;
+  mso-border-alt:solid windowtext .5pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:0in;line-height:107%'><span
+  style='font-size:10.0pt;line-height:107%;font-family:"Courier New";
+  color:red'>from </span><span class=SpellE><span class=GramE><span
+  style='font-size:10.0pt;line-height:107%;font-family:"Courier New";
+  color:black;mso-color-alt:windowtext'>sklearn.tree</span></span></span><span
+  style='font-size:10.0pt;line-height:107%;font-family:"Courier New";
+  color:black;mso-color-alt:windowtext'> </span><span style='font-size:10.0pt;
+  line-height:107%;font-family:"Courier New";color:red'>import </span><span
+  class=SpellE><span style='font-size:10.0pt;line-height:107%;font-family:"Courier New";
+  color:black;mso-color-alt:windowtext'>DecisionTreeClassifier</span></span><span
+  style='font-size:10.0pt;line-height:107%;font-family:"Courier New"'><o:p></o:p></span></p>
+  <p class=MsoNormal style='margin-bottom:0in;line-height:107%'><span
+  style='font-size:10.0pt;line-height:107%;font-family:"Courier New";
+  color:red'>from </span><span class=SpellE><span style='font-size:10.0pt;
+  line-height:107%;font-family:"Courier New";color:black;mso-color-alt:windowtext'>sklearn</span></span><span
+  style='font-size:10.0pt;line-height:107%;font-family:"Courier New";
+  color:black;mso-color-alt:windowtext'>. <span class=SpellE>model_selection</span>
+  </span><span style='font-size:10.0pt;line-height:107%;font-family:"Courier New";
+  color:red'>import </span><span class=SpellE><span style='font-size:10.0pt;
+  line-height:107%;font-family:"Courier New";color:black;mso-color-alt:windowtext'>train_test_split</span></span><span
+  style='font-size:10.0pt;line-height:107%;font-family:"Courier New"'><o:p></o:p></span></p>
+  <p class=MsoNormal style='margin-bottom:0in;line-height:107%'><span
+  style='font-size:10.0pt;line-height:107%;font-family:"Courier New";
+  color:red'>from </span><span class=SpellE><span style='font-size:10.0pt;
+  line-height:107%;font-family:"Courier New";color:#C55A11;mso-themecolor:accent2;
+  mso-themeshade:191;mso-style-textfill-fill-color:#C55A11;mso-style-textfill-fill-themecolor:
+  accent2;mso-style-textfill-fill-alpha:100.0%;mso-style-textfill-fill-colortransforms:
+  lumm=75000'>ImbBag</span></span><span style='font-size:10.0pt;line-height:
+  107%;font-family:"Courier New";color:#C55A11;mso-themecolor:accent2;
+  mso-themeshade:191;mso-style-textfill-fill-color:#C55A11;mso-style-textfill-fill-themecolor:
+  accent2;mso-style-textfill-fill-alpha:100.0%;mso-style-textfill-fill-colortransforms:
+  lumm=75000'> </span><span style='font-size:10.0pt;line-height:107%;
+  font-family:"Courier New";color:red'>import </span><span style='font-size:
+  10.0pt;line-height:107%;font-family:"Courier New";color:#C55A11;mso-themecolor:
+  accent2;mso-themeshade:191;mso-style-textfill-fill-color:#C55A11;mso-style-textfill-fill-themecolor:
+  accent2;mso-style-textfill-fill-alpha:100.0%;mso-style-textfill-fill-colortransforms:
+  lumm=75000'>UnderBag</span><span style='font-size:10.0pt;line-height:107%;
+  font-family:"Courier New"'><o:p></o:p></span></p>
+  <p class=MsoNormal style='margin-bottom:0in;line-height:107%'><span
+  style='font-size:10.0pt;line-height:107%;font-family:"Courier New"'><o:p>&nbsp;</o:p></span></p>
+  <p class=MsoNormal style='margin-bottom:0in;line-height:107%'><span
+  class=SpellE><span style='font-size:10.0pt;line-height:107%;font-family:"Courier New";
+  color:black;mso-color-alt:windowtext'>dataframe</span></span><span
+  style='font-size:10.0pt;line-height:107%;font-family:"Courier New";
+  color:black;mso-color-alt:windowtext'> = <span class=SpellE>read_csv</span>('dataset.csv')</span><span
+  style='font-size:10.0pt;line-height:107%;font-family:"Courier New"'><o:p></o:p></span></p>
+  <p class=MsoNormal style='margin-bottom:0in;line-height:107%'><span
+  style='font-size:10.0pt;line-height:107%;font-family:"Courier New";
+  color:black;mso-color-alt:windowtext'>data = <span class=SpellE><span
+  class=GramE>dataframe.values</span></span><span style='mso-spacerun:yes'>   
+  </span></span><span style='font-size:10.0pt;line-height:107%;font-family:
+  "Courier New"'><o:p></o:p></span></p>
+  <p class=MsoNormal style='margin-bottom:0in;line-height:107%'><span
+  style='font-size:10.0pt;line-height:107%;font-family:"Courier New";
+  color:black;mso-color-alt:windowtext'>X = data<span class=GramE>[:,:</span>-1]</span><span
+  style='font-size:10.0pt;line-height:107%;font-family:"Courier New"'><o:p></o:p></span></p>
+  <p class=MsoNormal style='margin-bottom:0in;line-height:107%'><span
+  style='font-size:10.0pt;line-height:107%;font-family:"Courier New";
+  color:black;mso-color-alt:windowtext'>Y = data<span class=GramE>[:,:</span>-1]</span><span
+  style='font-size:10.0pt;line-height:107%;font-family:"Courier New"'><o:p></o:p></span></p>
+  <p class=MsoNormal style='margin-bottom:0in;line-height:107%'><span
+  style='font-size:10.0pt;line-height:107%;font-family:"Courier New"'><o:p>&nbsp;</o:p></span></p>
+  <p class=MsoNormal style='margin-bottom:0in;line-height:107%'><i><span
+  style='font-size:10.0pt;line-height:107%;font-family:"Courier New";
+  color:black;mso-color-alt:windowtext'># <span class=GramE>split</span> the
+  dataset into training and test sets</span></i><i><span style='font-size:10.0pt;
+  line-height:107%;font-family:"Courier New"'><o:p></o:p></span></i></p>
+  <p class=MsoNormal style='margin-bottom:0in;line-height:107%'><span
+  class=SpellE><span style='font-size:10.0pt;line-height:107%;font-family:"Courier New";
+  color:black;mso-color-alt:windowtext'>X_<span class=GramE>train</span></span></span><span
+  class=GramE><span style='font-size:10.0pt;line-height:107%;font-family:"Courier New";
+  color:black;mso-color-alt:windowtext'> ,<span class=SpellE>X</span></span></span><span
+  class=SpellE><span style='font-size:10.0pt;line-height:107%;font-family:"Courier New";
+  color:black;mso-color-alt:windowtext'>_test</span></span><span
+  style='font-size:10.0pt;line-height:107%;font-family:"Courier New";
+  color:black;mso-color-alt:windowtext'> ,<span class=SpellE>y_train</span> ,<span
+  class=SpellE>y_test</span> = <span class=SpellE>train_test_split</span> (X, y,
+  <span class=SpellE>test_size</span> =0.2)</span><span style='font-size:10.0pt;
+  line-height:107%;font-family:"Courier New"'><o:p></o:p></span></p>
+  <p class=MsoNormal style='margin-bottom:0in;line-height:107%'><span
+  style='font-size:10.0pt;line-height:107%;font-family:"Courier New"'><o:p>&nbsp;</o:p></span></p>
+  <p class=MsoNormal style='margin-bottom:0in;line-height:107%'><i><span
+  style='font-size:10.0pt;line-height:107%;font-family:"Courier New";
+  color:black;mso-color-alt:windowtext'># <span class=GramE>instantiate</span>
+  the imbalance bagging classifier, training, prediction </span></i><i><span
+  style='font-size:10.0pt;line-height:107%;font-family:"Courier New"'><o:p></o:p></span></i></p>
+  <p class=MsoNormal style='margin-bottom:0in;line-height:107%'><span
+  class=SpellE><span style='font-size:10.0pt;line-height:107%;font-family:"Courier New";
+  color:black;mso-color-alt:windowtext'>cls</span></span><span
+  style='font-size:10.0pt;line-height:107%;font-family:"Courier New";
+  color:black;mso-color-alt:windowtext'> = <span class=GramE>UnderBag(</span><span
+  class=SpellE>n_estimator</span> = 50, estimator = <span class=SpellE>DecisionTreeClassifier</span>())</span><span
+  style='font-size:10.0pt;line-height:107%;font-family:"Courier New"'><o:p></o:p></span></p>
+  <p class=MsoNormal style='margin-bottom:0in;line-height:107%'><span
+  class=SpellE><span class=GramE><span style='font-size:10.0pt;line-height:
+  107%;font-family:"Courier New";color:black;mso-color-alt:windowtext'>clf.fit</span></span></span><span
+  class=GramE><span style='font-size:10.0pt;line-height:107%;font-family:"Courier New";
+  color:black;mso-color-alt:windowtext'>(</span></span><span class=SpellE><span
+  style='font-size:10.0pt;line-height:107%;font-family:"Courier New";
+  color:black;mso-color-alt:windowtext'>X_train</span></span><span
+  style='font-size:10.0pt;line-height:107%;font-family:"Courier New";
+  color:black;mso-color-alt:windowtext'> , <span class=SpellE>y_train</span>)</span><span
+  style='font-size:10.0pt;line-height:107%;font-family:"Courier New"'><o:p></o:p></span></p>
+  <p class=MsoNormal style='margin-bottom:0in;line-height:107%'><span
+  class=SpellE><span style='font-size:10.0pt;line-height:107%;font-family:"Courier New";
+  color:black;mso-color-alt:windowtext'>y_pred</span></span><span
+  style='font-size:10.0pt;line-height:107%;font-family:"Courier New";
+  color:black;mso-color-alt:windowtext'> = <span class=SpellE><span
+  class=GramE>clf.predict</span></span>(<span class=SpellE>X_test</span>)</span><span
+  style='font-size:10.0pt;line-height:107%;font-family:"Courier New"'><o:p></o:p></span></p>
+  </td>
+ </tr>
+</table>
+
+<div style='mso-element:para-border-div;border:none;border-bottom:solid windowtext 1.0pt;
+mso-border-bottom-alt:solid windowtext .75pt;padding:0in 0in 1.0pt 0in'>
+
+<p class=MsoNormal style='margin-bottom:0in;border:none;mso-border-bottom-alt:
+solid windowtext .75pt;padding:0in;mso-padding-alt:0in 0in 1.0pt 0in'><span
+style='font-size:12.0pt;line-height:107%;font-family:"Times New Roman",serif;
+mso-ascii-theme-font:major-bidi;mso-hansi-theme-font:major-bidi;mso-bidi-theme-font:
+major-bidi'><o:p>&nbsp;</o:p></span></p>
+
+</div>
+
+<p class=MsoNormal style='margin-bottom:0in'><b><span style='font-size:12.0pt;
+line-height:107%;font-family:"Times New Roman",serif;mso-ascii-theme-font:major-bidi;
+mso-hansi-theme-font:major-bidi;mso-bidi-theme-font:major-bidi'><o:p>&nbsp;</o:p></span></b></p>
+
+<p class=MsoNormal><b><span style='font-size:12.0pt;line-height:107%;
+font-family:"Times New Roman",serif;mso-ascii-theme-font:major-bidi;mso-hansi-theme-font:
+major-bidi;mso-bidi-theme-font:major-bidi'>Methods<o:p></o:p></span></b></p>
+
+<table class=MsoTableGrid border=1 cellspacing=0 cellpadding=0 width=637
+ style='width:477.85pt;margin-left:30.35pt;border-collapse:collapse;border:
+ none;mso-border-alt:solid windowtext .5pt;mso-yfti-tbllook:1184;mso-padding-alt:
+ 0in 5.4pt 0in 5.4pt'>
+ <tr style='mso-yfti-irow:0;mso-yfti-firstrow:yes'>
+  <td width=203 valign=top style='width:152.45pt;border:solid windowtext 1.0pt;
+  mso-border-alt:solid windowtext .5pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:0in;line-height:normal'><span
+  class=GramE><span style='font-size:12.0pt;font-family:"Times New Roman",serif;
+  mso-ascii-theme-font:major-bidi;mso-hansi-theme-font:major-bidi;mso-bidi-theme-font:
+  major-bidi'>fit(</span></span><span style='font-size:12.0pt;font-family:"Times New Roman",serif;
+  mso-ascii-theme-font:major-bidi;mso-hansi-theme-font:major-bidi;mso-bidi-theme-font:
+  major-bidi'>self, <span class=SpellE>X_train</span>, <span class=SpellE>y_train</span>)<o:p></o:p></span></p>
+  </td>
+  <td width=434 valign=top style='width:325.4pt;border:solid windowtext 1.0pt;
+  border-left:none;mso-border-left-alt:solid windowtext .5pt;mso-border-alt:
+  solid windowtext .5pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:0in;line-height:normal'><span
+  style='font-size:12.0pt;font-family:"Times New Roman",serif;mso-ascii-theme-font:
+  major-bidi;mso-hansi-theme-font:major-bidi;mso-bidi-theme-font:major-bidi'>Fit
+  the model.<o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:1'>
+  <td width=203 valign=top style='width:152.45pt;border:solid windowtext 1.0pt;
+  border-top:none;mso-border-top-alt:solid windowtext .5pt;mso-border-alt:solid windowtext .5pt;
+  padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:0in;line-height:normal'><span
+  class=GramE><span style='font-size:12.0pt;font-family:"Times New Roman",serif;
+  mso-ascii-theme-font:major-bidi;mso-hansi-theme-font:major-bidi;mso-bidi-theme-font:
+  major-bidi'>predict(</span></span><span style='font-size:12.0pt;font-family:
+  "Times New Roman",serif;mso-ascii-theme-font:major-bidi;mso-hansi-theme-font:
+  major-bidi;mso-bidi-theme-font:major-bidi'>self, X)<o:p></o:p></span></p>
+  </td>
+  <td width=434 valign=top style='width:325.4pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:0in;line-height:normal'><span
+  style='font-size:12.0pt;font-family:"Times New Roman",serif;mso-ascii-theme-font:
+  major-bidi;mso-hansi-theme-font:major-bidi;mso-bidi-theme-font:major-bidi'>Predict
+  the class label for sample X<o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:2;mso-yfti-lastrow:yes'>
+  <td width=203 valign=top style='width:152.45pt;border:solid windowtext 1.0pt;
+  border-top:none;mso-border-top-alt:solid windowtext .5pt;mso-border-alt:solid windowtext .5pt;
+  padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:0in;line-height:normal'><span
+  class=SpellE><span style='font-size:12.0pt;font-family:"Times New Roman",serif;
+  mso-ascii-theme-font:major-bidi;mso-hansi-theme-font:major-bidi;mso-bidi-theme-font:
+  major-bidi'>predict_<span class=GramE>proba</span></span></span><span
+  class=GramE><span style='font-size:12.0pt;font-family:"Times New Roman",serif;
+  mso-ascii-theme-font:major-bidi;mso-hansi-theme-font:major-bidi;mso-bidi-theme-font:
+  major-bidi'>(</span></span><span style='font-size:12.0pt;font-family:"Times New Roman",serif;
+  mso-ascii-theme-font:major-bidi;mso-hansi-theme-font:major-bidi;mso-bidi-theme-font:
+  major-bidi'>self, X)<o:p></o:p></span></p>
+  </td>
+  <td width=434 valign=top style='width:325.4pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:0in;line-height:normal'><span
+  style='font-size:12.0pt;font-family:"Times New Roman",serif;mso-ascii-theme-font:
+  major-bidi;mso-hansi-theme-font:major-bidi;mso-bidi-theme-font:major-bidi'>Estimate
+  the probability of X belonging to each class-labels.<o:p></o:p></span></p>
+  </td>
+ </tr>
+</table>
+
+<p class=MsoNormal><b><span style='font-size:12.0pt;line-height:107%;
+font-family:"Times New Roman",serif;mso-ascii-theme-font:major-bidi;mso-hansi-theme-font:
+major-bidi;mso-bidi-theme-font:major-bidi'><o:p>&nbsp;</o:p></span></b></p>
+
+<p class=MsoNormal><span class=GramE><span style='font-size:12.0pt;line-height:
+107%;font-family:"Times New Roman",serif;mso-ascii-theme-font:major-bidi;
+mso-hansi-theme-font:major-bidi;mso-bidi-theme-font:major-bidi;color:red'>fit</span><span
+style='font-size:12.0pt;line-height:107%;font-family:"Times New Roman",serif;
+mso-ascii-theme-font:major-bidi;mso-hansi-theme-font:major-bidi;mso-bidi-theme-font:
+major-bidi'>(</span></span><span style='font-size:12.0pt;line-height:107%;
+font-family:"Times New Roman",serif;mso-ascii-theme-font:major-bidi;mso-hansi-theme-font:
+major-bidi;mso-bidi-theme-font:major-bidi'>self, <span class=SpellE>X_train,y_train</span>)<b><o:p></o:p></b></span></p>
+
+<p class=MsoNormal style='margin-left:.5in'><b><span style='font-size:12.0pt;
+line-height:107%;font-family:"Times New Roman",serif;mso-ascii-theme-font:major-bidi;
+mso-hansi-theme-font:major-bidi;mso-bidi-theme-font:major-bidi'>Parameters <span
+class=SpellE>X_<span class=GramE>train</span></span><span class=GramE> :</span>
+<span class=SpellE><i>numpy.ndarray</i></span><i> of shape (<span class=SpellE>n_samples</span>,
+<span class=SpellE>n_features</span>)</i><o:p></o:p></span></b></p>
+
+<p class=MsoNormal style='margin-left:2.0in'><span style='font-size:12.0pt;
+line-height:107%;font-family:"Times New Roman",serif;mso-ascii-theme-font:major-bidi;
+mso-hansi-theme-font:major-bidi;mso-bidi-theme-font:major-bidi'>The features to
+train the model.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:99.0pt'><span class=SpellE><b><span
+style='font-size:12.0pt;line-height:107%;font-family:"Times New Roman",serif;
+mso-ascii-theme-font:major-bidi;mso-hansi-theme-font:major-bidi;mso-bidi-theme-font:
+major-bidi'>y_<span class=GramE>train</span></span></b></span><span
+class=GramE><b><span style='font-size:12.0pt;line-height:107%;font-family:"Times New Roman",serif;
+mso-ascii-theme-font:major-bidi;mso-hansi-theme-font:major-bidi;mso-bidi-theme-font:
+major-bidi'> :</span></b></span><b><span style='font-size:12.0pt;line-height:
+107%;font-family:"Times New Roman",serif;mso-ascii-theme-font:major-bidi;
+mso-hansi-theme-font:major-bidi;mso-bidi-theme-font:major-bidi'> <span
+class=SpellE><i>numpy.ndarray</i></span><i> of shape (<span class=SpellE>n_samples</span>,
+)</i><o:p></o:p></span></b></p>
+
+<p class=MsoNormal style='margin-left:117.0pt;text-indent:27.0pt'><span
+style='font-size:12.0pt;line-height:107%;font-family:"Times New Roman",serif;
+mso-ascii-theme-font:major-bidi;mso-hansi-theme-font:major-bidi;mso-bidi-theme-font:
+major-bidi'>An array-like with the class labels of all samples in <span
+class=SpellE>X_train</span>.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:0in;text-indent:.5in'><span
+class=GramE><b><span style='font-size:12.0pt;line-height:107%;font-family:"Times New Roman",serif;
+mso-ascii-theme-font:major-bidi;mso-hansi-theme-font:major-bidi;mso-bidi-theme-font:
+major-bidi'>Returns :</span></b></span><b><span style='font-size:12.0pt;
+line-height:107%;font-family:"Times New Roman",serif;mso-ascii-theme-font:major-bidi;
+mso-hansi-theme-font:major-bidi;mso-bidi-theme-font:major-bidi'> <span
+style='mso-spacerun:yes'>   </span>self<o:p></o:p></span></b></p>
+
+<p class=MsoNormal style='margin-bottom:0in'><b><span style='font-size:12.0pt;
+line-height:107%;font-family:"Times New Roman",serif;mso-ascii-theme-font:major-bidi;
+mso-hansi-theme-font:major-bidi;mso-bidi-theme-font:major-bidi'><o:p>&nbsp;</o:p></span></b></p>
+
+<p class=MsoNormal><span class=GramE><b><span style='font-size:12.0pt;
+line-height:107%;font-family:"Times New Roman",serif;mso-ascii-theme-font:major-bidi;
+mso-hansi-theme-font:major-bidi;mso-bidi-theme-font:major-bidi;color:red'>predict</span></b><b><span
+style='font-size:12.0pt;line-height:107%;font-family:"Times New Roman",serif;
+mso-ascii-theme-font:major-bidi;mso-hansi-theme-font:major-bidi;mso-bidi-theme-font:
+major-bidi'>(</span></b></span><b><span style='font-size:12.0pt;line-height:
+107%;font-family:"Times New Roman",serif;mso-ascii-theme-font:major-bidi;
+mso-hansi-theme-font:major-bidi;mso-bidi-theme-font:major-bidi'>self, X):<o:p></o:p></span></b></p>
+
+<p class=MsoNormal style='margin-left:.5in'><b><span style='font-size:12.0pt;
+line-height:107%;font-family:"Times New Roman",serif;mso-ascii-theme-font:major-bidi;
+mso-hansi-theme-font:major-bidi;mso-bidi-theme-font:major-bidi'>Parameters <span
+class=GramE>X :</span> <span class=SpellE><i>numpy.ndarray</i></span><i> of
+shape (<span class=SpellE>n_samples</span>, <span class=SpellE>n_features</span>)</i><o:p></o:p></span></b></p>
+
+<p class=MsoNormal style='margin-left:2.0in'><span style='font-size:12.0pt;
+line-height:107%;font-family:"Times New Roman",serif;mso-ascii-theme-font:major-bidi;
+mso-hansi-theme-font:major-bidi;mso-bidi-theme-font:major-bidi'>All the samples
+we want to predict the label for.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:0in;text-indent:.5in'><span
+class=GramE><b><span style='font-size:12.0pt;line-height:107%;font-family:"Times New Roman",serif;
+mso-ascii-theme-font:major-bidi;mso-hansi-theme-font:major-bidi;mso-bidi-theme-font:
+major-bidi'>Returns :</span></b></span><b><span style='font-size:12.0pt;
+line-height:107%;font-family:"Times New Roman",serif;mso-ascii-theme-font:major-bidi;
+mso-hansi-theme-font:major-bidi;mso-bidi-theme-font:major-bidi'> <span
+style='mso-spacerun:yes'>   </span><span class=SpellE><i>numpy.ndarray</i></span><o:p></o:p></span></b></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:585.9pt;margin-bottom:
+0in;margin-left:2.0in'><span style='font-size:12.0pt;line-height:107%;
+font-family:"Times New Roman",serif;mso-ascii-theme-font:major-bidi;mso-hansi-theme-font:
+major-bidi;mso-bidi-theme-font:major-bidi'>A 1D array of shape (, <span
+class=SpellE>n_samples</span>), containing the predicted class labels for all
+instances in X.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:0in'><span style='font-size:12.0pt;
+line-height:107%;font-family:"Times New Roman",serif;mso-ascii-theme-font:major-bidi;
+mso-hansi-theme-font:major-bidi;mso-bidi-theme-font:major-bidi'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal><span class=SpellE><b><span style='font-size:12.0pt;
+line-height:107%;font-family:"Times New Roman",serif;mso-ascii-theme-font:major-bidi;
+mso-hansi-theme-font:major-bidi;mso-bidi-theme-font:major-bidi;color:red'>predict_<span
+class=GramE>proba</span></span></b></span><span class=GramE><b><span
+style='font-size:12.0pt;line-height:107%;font-family:"Times New Roman",serif;
+mso-ascii-theme-font:major-bidi;mso-hansi-theme-font:major-bidi;mso-bidi-theme-font:
+major-bidi'>(</span></b></span><b><span style='font-size:12.0pt;line-height:
+107%;font-family:"Times New Roman",serif;mso-ascii-theme-font:major-bidi;
+mso-hansi-theme-font:major-bidi;mso-bidi-theme-font:major-bidi'>self, X):<o:p></o:p></span></b></p>
+
+<p class=MsoNormal style='margin-left:.5in'><b><span style='font-size:12.0pt;
+line-height:107%;font-family:"Times New Roman",serif;mso-ascii-theme-font:major-bidi;
+mso-hansi-theme-font:major-bidi;mso-bidi-theme-font:major-bidi'>Parameters <span
+class=GramE>X :</span> <span class=SpellE><i>numpy.ndarray</i></span><i> of
+shape (<span class=SpellE>n_samples</span>, <span class=SpellE>n_features</span>)</i><o:p></o:p></span></b></p>
+
+<p class=MsoNormal style='margin-left:2.0in'><span style='font-size:12.0pt;
+line-height:107%;font-family:"Times New Roman",serif;mso-ascii-theme-font:major-bidi;
+mso-hansi-theme-font:major-bidi;mso-bidi-theme-font:major-bidi'>All the samples
+we want to predict the label for.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:0in;text-indent:.5in'><span
+class=GramE><b><span style='font-size:12.0pt;line-height:107%;font-family:"Times New Roman",serif;
+mso-ascii-theme-font:major-bidi;mso-hansi-theme-font:major-bidi;mso-bidi-theme-font:
+major-bidi'>Returns :</span></b></span><b><span style='font-size:12.0pt;
+line-height:107%;font-family:"Times New Roman",serif;mso-ascii-theme-font:major-bidi;
+mso-hansi-theme-font:major-bidi;mso-bidi-theme-font:major-bidi'> <span
+style='mso-spacerun:yes'>   </span><span class=SpellE><i>numpy.ndarray</i></span><o:p></o:p></span></b></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:585.9pt;margin-bottom:
+0in;margin-left:2.0in;text-align:justify'><span style='font-size:12.0pt;
+line-height:107%;font-family:"Times New Roman",serif;mso-ascii-theme-font:major-bidi;
+mso-hansi-theme-font:major-bidi;mso-bidi-theme-font:major-bidi'>A 2D array of
+shape (<span class=SpellE>n_samples</span>, <span class=SpellE>n_classes</span>).
+Where each <span class=SpellE>i-th</span> row contains <span class=SpellE>len</span>(<span
+class=SpellE><span class=GramE>self.target</span>_value</span>) elements,
+representing the probability that the <span class=SpellE>i-th</span> sample of
+X belongs to a certain class label.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:581.4pt;margin-bottom:
+0in;margin-left:0in'><span style='font-size:12.0pt;line-height:107%;font-family:
+"Times New Roman",serif;mso-ascii-theme-font:major-bidi;mso-hansi-theme-font:
+major-bidi;mso-bidi-theme-font:major-bidi'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal><span style='font-size:12.0pt;line-height:107%;font-family:
+"Times New Roman",serif;mso-ascii-theme-font:major-bidi;mso-hansi-theme-font:
+major-bidi;mso-bidi-theme-font:major-bidi'><o:p>&nbsp;</o:p></span></p>
+
+</div>
+
+</body>
+
+</html>
