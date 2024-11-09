@@ -78,7 +78,7 @@ y_pred = clf.predict(X_test)
 
 ## 🧑‍💻 Credits
 
-- **Yousef Abdi 
+- ** Yousef Abdi 
 - *University of Tabriz*
 
 
