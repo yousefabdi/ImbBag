@@ -26,22 +26,22 @@ __email__ = "yousef.abdi@gmail.com"
 class NBBag(object):
 
     #initializer
-    def __init__(self,n_estimator=10, estimator=DecisionTreeClassifier(), n_neighbors=5, psi = None, metric="hvdm", sampling_method="undersampling"):
+    def __init__(self,n_estimator=10, estimator=DecisionTreeClassifier(), n_neighbors=5, phi = None, metric="hvdm", sampling_method="undersampling"):
         self.n_estimator = n_estimator
         self.sampling_method = sampling_method
         self.n_neighbors = n_neighbors
         self.metric = metric
-        self.psi = psi
-        if psi == None and sampling_method == "undersampling":
-            self.psi = 0.5
-        elif psi == None and sampling_method == "oversampling":
-            self.psi = 2
+        self.phi = phi
+        if phi == None and sampling_method == "undersampling":
+            self.phi = 0.5
+        elif phi == None and sampling_method == "oversampling":
+            self.phi = 2
         self.models     = []
         self.baseclassifier = estimator
 
     def get_params(self, deep=True):
         return {"n_estimator": self.n_estimator, "estimator": self.baseclassifier, "n_neighbors": self.n_neighbors, \
-                "psi": self.psi, "metric":self.metric, "sampling_method": self.sampling_method}
+                "phi": self.phi, "metric":self.metric, "sampling_method": self.sampling_method}
     
     def set_params(self, **parameters):
         for parameter, value in parameters.items():
@@ -90,10 +90,10 @@ class NBBag(object):
             classes, counts = np.unique(lbls, return_counts=True)
             c = dict(zip(classes, counts))
             if len(classes) > 1:
-                L = (c[Lmaj]**self.psi)/self.n_neighbors
+                L = (c[Lmaj]**self.phi)/self.n_neighbors
                 weights[i] = 0.5*(L+1)
             elif len(classes) == 1 and int(classes[0]) == int(Lmaj):
-                L = (counts[0]**self.psi)/self.n_neighbors
+                L = (counts[0]**self.phi)/self.n_neighbors
                 weights[i] = 0.5*(L+1)
             else:
                 weights[i] = 0.5*(1/self.n_neighbors + 1)
