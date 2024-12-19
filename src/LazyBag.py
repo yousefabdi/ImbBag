@@ -24,7 +24,7 @@ class LazyBag(object):
         self.beta = beta
         self.models = []
         self.baseclassifier = estimator
-        self.K = n_neighbors
+        self.K = 5
         self.classes = []
 
 
