@@ -19,7 +19,7 @@ from scipy import stats
 
 class LazyBag(object):
     #initializer
-    def __init__(self,n_estimator=10, estimator=DecisionTreeClassifier(), n_neighbors = 5, beta = 0.99):
+    def __init__(self,n_estimator=10, estimator=DecisionTreeClassifier(), beta = 0.99):
         self.n_estimator = n_estimator
         self.beta = beta
         self.models = []
@@ -88,7 +88,7 @@ class LazyBag(object):
         self.classes = len(set(y_train))
         # Determin the value of K
         omega = math.log(len(X_train)**(1-self.beta), 4)
-        K = round(len(X_train)*omega)
+        self.K = round(len(X_train)*omega)
         training_data = np.concatenate((X_train,y_train.reshape(-1,1)),axis=1)
         weights = self.__calculate_ir(training_data)
         predictions = np.zeros((len(X_test),self.n_estimator))
