@@ -28,8 +28,10 @@ Also, use Python 3.11
 
 ## 🔍 Available Bagging Ensemble Algorithms in the ImbBag Package
 
-* UnderBagging (UnderBag) - ** Multi-class
-* Exactly Balanced Bagging (EBBag) - ** Binary-class
+* UnderBagging (UnderBag)
+  * Multi-class
+* Exactly Balanced Bagging (EBBag)
+  * Binary-class
 * OverBagging (OverBag) - ** Multi-class
 * SMOTE Bagging (SMOTEBag) - ** Multi-class
 * Roughly Balanced Bagging  (RBBag) - ** Binary-class
