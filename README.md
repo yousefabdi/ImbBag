@@ -33,41 +33,41 @@ Also, use Python 3.11
 * Exactly Balanced Bagging (EBBag)
   * Binary-class
 * OverBagging (OverBag)
- * Multi-class
+  * Multi-class
 * SMOTE Bagging (SMOTEBag)
- * Multi-class
+  * Multi-class
 * Roughly Balanced Bagging  (RBBag)
- * Binary-class
+  * Binary-class
 * Multi-class Roughly Balanced Bagging (MRBBag)
- * Multi-class
+  * Multi-class
 * Bagging Ensemble Variation (BEV)
- * Binary-class
+  * Binary-class
 * Lazy Bagging (LazyBag)
- * Multi-class
+  * Multi-class
 * Multi Random Balance Bagging (MultiRandBalBag)
- * Multi-class
+  * Multi-class
 * Neighborhood Balanced Bagging (NBBag)
- * Binary-class
+  * Binary-class
 * Probability Threshold Bagging (PTBag)
- * Multi-class
+  * Multi-class
 * Adaptive Synthetic Bagging (ADASYNBag)
- * Binary-class
+  * Binary-class
 * RSYN Bagging (RSYNBag)
- * Binary-class
+  * Binary-class
 * Resampling Ensemble Algorithm (REABag)
- * Multi-class
+  * Multi-class
 * Under-bagging K-NN (UnderBagKNN)
- * Multi-class
+  * Multi-class
 * Boundary Bagging (BBag)
- * Multi-class
+  * Multi-class
 * Bagging of Extrapolation-SMOTE SVM (BEBS)
- * Binary-class
+  * Binary-class
 * Evolutionary Under-sampling based Bagging (EUSBag)
- * Binary-class
+  * Binary-class
 * Random Balanced Sampling with Bagging (RBSBag)
- * Multi-class
+  * Multi-class
 * Cost-sensitive Bagging (CostBag)
- * Multi-class
+  * Multi-class
 
 ## ⚡️ Get Started
 
