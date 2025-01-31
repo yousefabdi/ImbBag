@@ -32,24 +32,42 @@ Also, use Python 3.11
   * Multi-class
 * Exactly Balanced Bagging (EBBag)
   * Binary-class
-* OverBagging (OverBag) - ** Multi-class
-* SMOTE Bagging (SMOTEBag) - ** Multi-class
-* Roughly Balanced Bagging  (RBBag) - ** Binary-class
-* Multi-class Roughly Balanced Bagging (MRBBag) - ** Multi-class
-* Bagging Ensemble Variation (BEV) - ** Binary-class
-* Lazy Bagging (LazyBag) - ** Multi-class
-* Multi Random Balance Bagging (MultiRandBalBag) - ** Multi-class
-* Neighborhood Balanced Bagging (NBBag) - ** Binary-class
-* Probability Threshold Bagging (PTBag) - ** Multi-class
-* Adaptive Synthetic Bagging (ADASYNBag) - ** Binary-class
-* RSYN Bagging (RSYNBag) - ** Binary-class
-* Resampling Ensemble Algorithm (REABag) - ** Multi-class
-* Under-bagging K-NN (UnderBagKNN) - ** Multi-class
-* Boundary Bagging (BBag) - ** Multi-class
-* Bagging of Extrapolation-SMOTE SVM (BEBS) - ** Binary-class
-* Evolutionary Under-sampling based Bagging (EUSBag)- ** Binary-class
-* Random Balanced Sampling with Bagging (RBSBag) - ** Multi-class
-* Cost-sensitive Bagging (CostBag) - ** Multi-class
+* OverBagging (OverBag)
+ * Multi-class
+* SMOTE Bagging (SMOTEBag)
+ * Multi-class
+* Roughly Balanced Bagging  (RBBag)
+ * Binary-class
+* Multi-class Roughly Balanced Bagging (MRBBag)
+ * Multi-class
+* Bagging Ensemble Variation (BEV)
+ * Binary-class
+* Lazy Bagging (LazyBag)
+ * Multi-class
+* Multi Random Balance Bagging (MultiRandBalBag)
+ * Multi-class
+* Neighborhood Balanced Bagging (NBBag)
+ * Binary-class
+* Probability Threshold Bagging (PTBag)
+ * Multi-class
+* Adaptive Synthetic Bagging (ADASYNBag)
+ * Binary-class
+* RSYN Bagging (RSYNBag)
+ * Binary-class
+* Resampling Ensemble Algorithm (REABag)
+ * Multi-class
+* Under-bagging K-NN (UnderBagKNN)
+ * Multi-class
+* Boundary Bagging (BBag)
+ * Multi-class
+* Bagging of Extrapolation-SMOTE SVM (BEBS)
+ * Binary-class
+* Evolutionary Under-sampling based Bagging (EUSBag)
+ * Binary-class
+* Random Balanced Sampling with Bagging (RBSBag)
+ * Multi-class
+* Cost-sensitive Bagging (CostBag)
+ * Multi-class
 
 ## ⚡️ Get Started
 
