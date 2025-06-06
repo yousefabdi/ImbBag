@@ -23,6 +23,7 @@ The following Python packages are required.
 * mlxtend
 * scikit-learn-intelex
 * ARFS
+* patch_sklearn
 
 Also, use Python 3.11
 
@@ -95,6 +96,7 @@ y_pred = clf.predict(X_test)
 ## 📅 Version History
 
 - **v1.1.0** - Initial release - October 17, 2024
+- **v1.3.0** - Updated relese  - June 06, 2025
 
 ## 🧑‍💻 Credits
 
