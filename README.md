@@ -2,6 +2,24 @@
 
 Imbalanced Bagging Ensemble Algorithms
 
+📚 Citation
+If you use **ImbBag** in your research or work, please cite the following paper:
+
+> Y. Abdi, "Toward a taxonomy and empirical benchmark of bagging methods for imbalanced classification", *International Journal of Data Science and Analytics*, 2026.  
+> DOI: [10.1007/s41060-026-01061-5](https://doi.org/10.1007/s41060-026-01061-5)
+
+[![DOI](https://img.shields.io/badge/DOI-10.1007%2Fs41060--026--01061--5-blue)](https://doi.org/10.1007/s41060-026-01061-5)
+
+**BibTeX:**
+```bibtex
+@article{Abdi2026ImbBag,
+  title   = {Toward a taxonomy and empirical benchmark of bagging methods for imbalanced classification},
+  author  = {Abdi, Yousef},
+  journal = {International Journal of Data Science and Analytics},
+  year    = {2026},
+  doi     = {10.1007/s41060-026-01061-5}
+}
+
 ## 📜 Description
 
 ImbBag is a specialized package that integrates a variety of bagging ensemble methods specifically designed for imbalanced data classification. This package provides a scikit-learn-based framework that simplifies the usage of these methods, making it easier for researchers and practitioners to apply them in their work, whether dealing with binary or multi-class classification problems.
