@@ -19,7 +19,6 @@ If you use **ImbBag** in your research or work, please cite the following paper:
 ```bibtex
 @article{Abdi2026ImbBag,
   title   = {Toward a taxonomy and empirical benchmark of bagging methods for imbalanced classification},
-  author  = {Abdi, Yousef},
   journal = {International Journal of Data Science and Analytics},
   year    = {2026},
   doi     = {10.1007/s41060-026-01061-5}
