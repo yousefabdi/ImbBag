@@ -6,7 +6,7 @@ Imbalanced Bagging Ensemble Algorithms
 
 ImbBag is a specialized package that integrates a variety of bagging ensemble methods specifically designed for imbalanced data classification. This package provides a scikit-learn-based framework that simplifies the usage of these methods, making it easier for researchers and practitioners to apply them in their work, whether dealing with binary or multi-class classification problems.
 
-📚 Citation
+## 📚 Citation
 
 If you use **ImbBag** in your research or work, please cite the following paper:
 
