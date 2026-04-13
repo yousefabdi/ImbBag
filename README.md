@@ -24,7 +24,7 @@ If you use **ImbBag** in your research or work, please cite the following paper:
   year    = {2026},
   doi     = {10.1007/s41060-026-01061-5}
 }
-
+```
 ## 🛠 Installation
 
 ```bash
