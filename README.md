@@ -9,9 +9,9 @@ ImbBag is a specialized package that integrates a variety of bagging ensemble me
 ## 🏆 Key Empirical Findings
 Based on our large-scale empirical benchmark of two dozen specialized bagging methods across 54 datasets, the core findings supported by this library include:
 
-Top Overall Performer: uNBBag (Neighborhood Balanced Bagging with undersampling) emerges as the most consistently robust algorithm across both binary and multi-class datasets. It successfully balances sensitivity and specificity, frequently outperforming or matching strong non-bagging baselines like Balanced Random Forest and XGBoost with Class Weights.
+Top Overall Performer: **uNBBag (Neighborhood Balanced Bagging with undersampling)** emerges as the most consistently robust algorithm across both binary and multi-class datasets. It successfully balances sensitivity and specificity, frequently outperforming or matching strong non-bagging baselines like Balanced Random Forest and XGBoost with Class Weights.
 
-Multi-Class Imbalance: uNBBag, RBBag, and PTBag cluster as the most effective methods for maximizing G-mean. In scenarios involving extreme class imbalance (e.g., Imbalance Ratios > 4,000), neighborhood-aware variants (uNBBag, oNBBag) maintain high robustness where aggressive undersampling methods lose critical rare-class information.
+Multi-Class Imbalance: ** uNBBag, RBBag, and PTBag ** cluster as the most effective methods for maximizing G-mean. In scenarios involving extreme class imbalance (e.g., Imbalance Ratios > 4,000), neighborhood-aware variants (uNBBag, oNBBag) maintain high robustness where aggressive undersampling methods lose critical rare-class information.
 
 Noise Tolerance: Cost-sensitive (CostBag) and threshold-moving (PTBag) bagging methods demonstrate superior resilience to label noise because they avoid synthetic sample generation that can amplify errors.
 
