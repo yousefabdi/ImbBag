@@ -9,13 +9,15 @@ ImbBag is a specialized package that integrates a variety of bagging ensemble me
 ## 🏆 Key Empirical Findings
 Based on our large-scale empirical benchmark of two dozen specialized bagging methods across 54 datasets, the core findings supported by this library include:
 
-Top Overall Performer: **uNBBag (Neighborhood Balanced Bagging with undersampling)** emerges as the most consistently robust algorithm across both binary and multi-class datasets. It successfully balances sensitivity and specificity, frequently outperforming or matching strong non-bagging baselines like Balanced Random Forest and XGBoost with Class Weights.
-
-Multi-Class Imbalance: **uNBBag, RBBag, and PTBag** cluster as the most effective methods for maximizing G-mean. In scenarios involving extreme class imbalance (e.g., Imbalance Ratios > 4,000), neighborhood-aware variants **(uNBBag, oNBBag)** maintain high robustness where aggressive undersampling methods lose critical rare-class information.
-
-Noise Tolerance: **Cost-sensitive (CostBag) and threshold-moving (PTBag)** bagging methods demonstrate superior resilience to label noise because they avoid synthetic sample generation that can amplify errors.
-
-Algorithm Instability: Methods heavily reliant on synthetic oversampling (SMOTEBag, REABag) tend to degrade significantly on noisy or high-dimensional sparse data. Furthermore, while RSYNBag shows strong agreement metrics on binary data, both it and ADASYNBag exhibit extreme instability on multi-class datasets, occasionally collapsing to near-zero performance.
+* **Top Overall Performer:** **uNBBag** (Neighborhood Balanced Bagging with undersampling) emerges as the most consistently robust algorithm across both binary and multi-class datasets. It successfully balances sensitivity and specificity, frequently outperforming or matching strong non-bagging baselines like Balanced Random Forest and XGBoost with Class Weights.
+* **Multi-Class Imbalance:** **uNBBag**, **RBBag**, and **PTBag** cluster as the most effective methods for maximizing G-mean. Under extreme class imbalance (e.g., Imbalance Ratios > 4,000), neighborhood-aware variants (**uNBBag**, **oNBBag**) maintain high robustness where aggressive undersampling methods lose critical rare-class information.
+* **Noise Tolerance:** Cost-sensitive (**CostBag**) and threshold-moving (**PTBag**) bagging methods demonstrate superior resilience to label noise because they avoid synthetic sample generation that can amplify errors.
+* **Handling Class Overlap:** For datasets with high overlap between class boundaries, methods that adjust decision thresholds post-learning (**PTBag**) or use disjoint majority partitions (**BEV**) offer greater robustness and maintain stable predictive performance.
+* **High-Dimensional Data Vulnerabilities:** Distance-based methods like **UnderBagKNN** degrade significantly in high-dimensional settings because pairwise distances lose their discriminative power. Conversely, evolutionary search methods like **EUSBag** remain much more stable across high-dimensional feature spaces.
+* **Algorithm Instability:** Methods heavily reliant on synthetic oversampling (**SMOTEBag**, **REABag**) tend to degrade on noisy or high-dimensional sparse data. While **RSYNBag** shows strong agreement metrics on binary data, both it and **ADASYNBag** exhibit extreme instability on multi-class datasets.
+* **ADASYN vs. SMOTE Performance:** Despite ADASYN being theoretically designed to improve upon SMOTE, **ADASYNBag** presents lower performance than **SMOTEBag** on multi-class datasets. This is due to ADASYN's high sensitivity to neighborhood parameters, which are difficult to tune given complex multi-class relationships.
+* **Method-Specific Sampling Optimization:** The superiority of undersampling versus oversampling is strictly algorithm-dependent. For example, the Neighborhood Balanced Bagging method is most effective when utilizing undersampling (**uNBBag**), whereas Multi-class Roughly Balanced Bagging performs better with oversampling (**oMRBBag**).
+* **Computational Efficiency:** Algorithms such as **EUSBag**, **BEBS**, and **LazyBag** exhibit the highest computational times among the evaluated methods. While they can achieve strong metrics on certain datasets, they require significant execution time and careful parameter fine-tuning.  
 
 ## 📚 Citation
 
