@@ -6,6 +6,17 @@ Imbalanced Bagging Ensemble Algorithms
 
 ImbBag is a specialized package that integrates a variety of bagging ensemble methods specifically designed for imbalanced data classification. This package provides a scikit-learn-based framework that simplifies the usage of these methods, making it easier for researchers and practitioners to apply them in their work, whether dealing with binary or multi-class classification problems.
 
+## 🏆 Key Empirical Findings
+Based on our large-scale empirical benchmark of two dozen specialized bagging methods across 54 datasets, the core findings supported by this library include:
+
+Top Overall Performer: uNBBag (Neighborhood Balanced Bagging with undersampling) emerges as the most consistently robust algorithm across both binary and multi-class datasets. It successfully balances sensitivity and specificity, frequently outperforming or matching strong non-bagging baselines like Balanced Random Forest and XGBoost with Class Weights.
+
+Multi-Class Imbalance: uNBBag, RBBag, and PTBag cluster as the most effective methods for maximizing G-mean. In scenarios involving extreme class imbalance (e.g., Imbalance Ratios > 4,000), neighborhood-aware variants (uNBBag, oNBBag) maintain high robustness where aggressive undersampling methods lose critical rare-class information.
+
+Noise Tolerance: Cost-sensitive (CostBag) and threshold-moving (PTBag) bagging methods demonstrate superior resilience to label noise because they avoid synthetic sample generation that can amplify errors.
+
+Algorithm Instability: Methods heavily reliant on synthetic oversampling (SMOTEBag, REABag) tend to degrade significantly on noisy or high-dimensional sparse data. Furthermore, while RSYNBag shows strong agreement metrics on binary data, both it and ADASYNBag exhibit extreme instability on multi-class datasets, occasionally collapsing to near-zero performance.
+
 ## 📚 Citation
 
 If you use **ImbBag** in your research or work, please cite the following paper:
